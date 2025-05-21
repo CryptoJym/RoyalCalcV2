@@ -72,6 +72,11 @@ docker run --rm -it royalcalc bash
 Inside the container execute `./codex/setup.sh` to install dependencies and
 start the MCP servers. Afterwards you can run `pnpm dev` or `pnpm build` as
 usual. This setup mirrors the environment used during automated testing.
+=======
+Run `pnpm build` to generate the `out` directory. Deploy this directory on
+Netlify as a static site. The `next.config.mjs` file is configured with
+`output: 'export'` so the build produces purely static HTML assets that work
+correctly on Netlify's CDN.
 
 ---
 
