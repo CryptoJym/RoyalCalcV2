@@ -7,6 +7,7 @@ RoyalCalc is a mobile-first financial calculator for the **Royal** ecosystem, bu
 ```bash
 pnpm install   # or npm install / yarn install
 pnpm dev       # starts dev server on http://localhost:3000
+pnpm build     # generates a static export in ./out for deployment
 ```
 
 ## Tech stack
@@ -44,6 +45,13 @@ Planned next steps (from the PRD):
 * Replace placeholder yield formula with validated Royal business logic.
 * Add charts (recharts) and tutorials/overlays.
 * Improve mobile UX polish, dark mode, accessibility.
+
+## Deploying to Netlify
+
+Run `pnpm build` to generate the `out` directory. Deploy this directory on
+Netlify as a static site. The `next.config.mjs` file is configured with
+`output: 'export'` so the build produces purely static HTML assets that work
+correctly on Netlify's CDN.
 
 ---
 
