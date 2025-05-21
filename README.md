@@ -78,6 +78,11 @@ Netlify as a static site. The `next.config.mjs` file is configured with
 `output: 'export'` so the build produces purely static HTML assets that work
 correctly on Netlify's CDN.
 
+## Pull request automation
+
+Pull requests labeled `automerge` are automatically merged after all checks
+pass. The head branch is deleted once the merge completes.
+
 ---
 
 © Royal.Space 
