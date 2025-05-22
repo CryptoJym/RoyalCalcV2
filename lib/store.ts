@@ -43,5 +43,13 @@ export const useRoyalCalcStore = create<RoyalCalcState>((set, get) => ({
     }
   },
 
-  reset: () => set({ inputs: defaultInputs }),
+  reset: () =>
+    set({
+      inputs: defaultInputs,
+      outputs: calculateProjectedYield(
+        defaultInputs.investmentAmountUSD,
+        Number(defaultInputs.stakingDurationYears),
+        defaultInputs.projectedAnnualReturnRate
+      ),
+    }),
 })); 
