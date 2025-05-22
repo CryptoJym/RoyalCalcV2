@@ -18,3 +18,7 @@ docker run --rm repo-dev ./codex/setup.sh
 ```
 
 Outbound-network MCP servers are intentionally excluded.
+
+## Backlog
+The project's backlog is documented in [BACKLOG.md](./BACKLOG.md). Review this
+file when starting work to understand the current outstanding tasks.
