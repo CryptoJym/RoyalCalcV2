@@ -6,6 +6,7 @@ RUN corepack enable && corepack prepare pnpm@8.15.4 --activate
 # Pre-install node dependencies
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
+ENV NODE_ENV=development
 RUN pnpm install --frozen-lockfile
 
 # Copy source
