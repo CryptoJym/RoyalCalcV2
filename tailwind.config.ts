@@ -14,9 +14,9 @@ const config: Config = {
           gold: '#D4AF37',
           black: '#111111',
         },
-        brand_white: '#FFFFFF',
+        'brand-white': '#FFFFFF',
         neutral: {
-          platinum_gray: '#CCCCCC',
+          'platinum-gray': '#CCCCCC',
         },
       },
       fontFamily: {
@@ -31,4 +31,4 @@ const config: Config = {
   ],
 };
 
-export default config; 
+export default config;

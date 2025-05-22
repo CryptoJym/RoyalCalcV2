@@ -40,7 +40,7 @@ export default function CalculatorForm() {
         <input type="number" step="0.01" className="w-full border rounded p-2" {...register('projectedAnnualReturnRate', { valueAsNumber: true })} />
       </div>
 
-      <button type="submit" className="bg-royal-gold text-brand_white px-4 py-2 rounded w-full hover:opacity-90">Calculate</button>
+      <button type="submit" className="bg-royal-gold text-brand-white px-4 py-2 rounded w-full hover:opacity-90">Calculate</button>
     </form>
   );
 } 
