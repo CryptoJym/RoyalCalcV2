@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+# RoyalCalc Agent Guidelines
+
+This repo uses Next.js 14, TypeScript and PNPM.
+
+## Required checks
+
+Run the following commands from the repository root after making changes:
+
+```bash
+pnpm lint   # run eslint via Next.js
+pnpm test   # run vitest tests
+```
+
+Format code using Prettier:
+
+```bash
+npx prettier -w .
+```
+
+Include the results of these commands in the PR description.
+=======
 # Repository Guide
 
 ## Languages and Tools
@@ -22,3 +44,4 @@ Outbound-network MCP servers are intentionally excluded.
 ## Backlog
 The project's backlog is documented in [BACKLOG.md](./BACKLOG.md). Review this
 file when starting work to understand the current outstanding tasks.
+>>>>>>> origin/main
