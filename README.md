@@ -8,6 +8,7 @@ RoyalCalc is a mobile-first financial calculator for the **Royal** ecosystem, bu
 pnpm install   # or npm install / yarn install
 pnpm dev       # starts dev server on http://localhost:3000
 pnpm build     # generates a static export in ./out for deployment
+pnpm lint      # run ESLint
 ```
 
 ## Tech stack
