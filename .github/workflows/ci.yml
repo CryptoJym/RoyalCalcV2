@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Docker image
+        run: docker build -t repo-dev .
+      - name: Run lint
+        run: docker run --rm repo-dev pnpm lint
+      - name: Run setup script
+        run: |
+          mkdir artifacts
+          docker run --rm -v $(pwd)/artifacts:/artifacts repo-dev ./codex/setup.sh
+      - name: Archive test log
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-log
+          path: artifacts/test.log
