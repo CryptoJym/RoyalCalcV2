@@ -86,4 +86,10 @@ pass. The head branch is deleted once the merge completes.
 
 ---
 
-© Royal.Space 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+© Royal.Space
